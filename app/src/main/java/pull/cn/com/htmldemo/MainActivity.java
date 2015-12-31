@@ -26,6 +26,8 @@ public class MainActivity extends AppCompatActivity {
         data.add("http://7xlovk.com2.z0.glb.qiniucdn.com/upload/net/banner/wechat/4.jpg");
         data.add("http://7xlovk.com2.z0.glb.qiniucdn.com/upload/net/%E6%99%AF%E5%8C%BA%E6%96%B9%E5%9B%BE/%E4%B8%89%E4%BA%9A.png");
         data.add("http://7xlovk.com2.z0.glb.qiniucdn.com/upload/net/%E6%99%AF%E5%8C%BA%E6%96%B9%E5%9B%BE/%E6%9D%AD%E5%B7%9E.png");
+        data.add("http://7xlovk.com2.z0.glb.qiniucdn.com/upload/net/banner/wechat/3%E5%90%881/23.jpg");
+        data.add("http://7xlovk.com2.z0.glb.qiniucdn.com/upload/net/banner/wechat/3%E5%90%881/33.jpg");
 
         list.setAdapter(new ListAdapter(this,data));
     }

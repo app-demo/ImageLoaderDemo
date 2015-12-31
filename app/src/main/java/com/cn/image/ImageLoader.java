@@ -159,7 +159,7 @@ public class ImageLoader {
     /**
      * 标记异步线程下载
      * <p/>
-     * 可能有多个异步程序在下载同一张图片
+     * 可能有多个异步线程在下载同一张图片
      *
      * @param url
      * @param imageView
