@@ -31,7 +31,7 @@ public class ImageLoader {
     /**
      * 一级缓存最大数量
      */
-    public static final int MAX_CAPACITY = 1;
+    public static final int MAX_CAPACITY = 20;
     /**
      * 一级缓存
      * <p/>
