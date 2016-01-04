@@ -31,7 +31,7 @@ public class ImageLoader {
     /**
      * 一级缓存最大数量
      */
-    public static final int MAX_CAPACITY = 20;
+    public static final int MAX_CAPACITY = 1;
     /**
      * 一级缓存
      * <p/>
@@ -66,6 +66,9 @@ public class ImageLoader {
 
     /**
      * 二级缓存
+     * 强引用：内存爆了，也不会回收
+     * SoftReference : 软引用，只有内存不足的时候才会回收
+     * WeakReference : 弱引用,GC扫描到就回收
      * <p/>
      * ConcurrentHashMap:线程安全的,为了并发的安全
      */
@@ -242,7 +245,7 @@ public class ImageLoader {
 //            return null;
 //        }
 
-        //存储路径
+        //存储路径:/data/data/pull.cn.com.htmldemo/cache/9e0a476f7ccbc6afdcf5dbe217cd639b
         String path = context.getCacheDir().getAbsolutePath() + File.separator + fileName;
 
         FileInputStream is = null;
